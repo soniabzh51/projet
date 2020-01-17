@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content=" Bière bière" />
+    <meta name="description" content="Bière en stock : vente de bières en bouteille, en fûts,
+     verres à bière, boutique, collectionneurs, et bien plus encore..." />
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <!--Appel à Fontawsome pour l'icône du menu-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Bières en stock</title>
+</head>
+
+<!-- Contenu du site -->
+
+<body>
+
+    <!--Header-->
+    <header class="container-fluid header" id="top">
+        <div class="container" id="liensRecherche">
+            <div class="row">
+                <div class="col-2 col-sm-2 col-lg-1" id="lien_loginJs">
+                    <div id="fondLogin">
+
+                        <!--JS Modal - Connect -->
+                        <a href="#modal1" class="js-modal">abc</a>
+                        <!-- Class "js-modal" à mettre sur tous les liens du site qui sont 
+                    censés ouvrir une boîte modale, puis faire un querySelector dans le js-->
+                    </div>
+                    <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria_labelledby="Login"
+                        style="display: none;">
+                        <!-- Display : none permet de cacher le contenu de la boite à l'utilisateur,
+                        Il sera annulé dans le js -->
+                        <div class="modal-wrapper js-modal-stop">
+                            <div id="zone_idmdp" class="formulaire">
+                                <form class="row justify-content-center" id="login" method="POST"
+                                    action="traitement php">
+                                    <div id="blocPassword">
+                                        <h3>On s'est déjà vu ?</h3>
+                                        <p>Connectez-vous pour accéder à votre compte et<br>
+                                            profiter de tous ses avantages</p>
+                                        <fieldset>
+                                            <label for="identifiant">Identifiant</label>
+                                            <input type="text" name="identifiant" id="identifiant"
+                                                placeholder="Identifiant"><br>
+                                            <span id="missId"></span>
+                                            <label for="password">Mot de passe</label>
+                                            <input type="text" name="password" id="password" required
+                                                placeholder="Mot de passe"><br>
+                                            <span id="missPassword"></span>
+                                        </fieldset>
+                                        <div id="connexion">
+                                            <a href="index.html"><span id="valider">Connexion</span></a>
+                                        </div>
+                                        <a href="#" id="lost">Mot de passe oublié ?</a><br>
+                                        <button class="js-modal-close">Quitter</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--End JS Modal-->
+                    </aside>
+                </div>
+
+                <!-- BS Modal - Create Account-->
+                <div class="col-2 col-sm-2 col-lg-1" id="creerCompte">
+                    <!-- Button trigger modal -->
+                    <div id="fondCreerCompte">
+
+                        <!-- Button trigger modal -->
+                        <button id="pictoModal2" type="button" data-toggle="modal" data-target="#modal2">
+                            <a href="#pictoModal2">abc</a>
+                        </button>
+
+                    </div>
+                    <!-- Modal -->
+                    <aside class="modal" id="modal2" tabindex="-1" role="dialog" class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Pas encore de compte ?</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form id="createPassword" method="POST" action="traitement php">
+
+                                    <label for="nom">Nom</label>
+                                    <input type="text" id="nom" required placeholder="Nom">
+                                    <span id="missNom"></span><br>
+
+                                    <label for="prenom">Prénom</label>
+                                    <input type="text" id="prenom" required placeholder="Prénom">
+                                    <span id="missPrenom"></span><br>
+
+                                    <label for="identifiant">Identifiant</label>
+                                    <input type="text" name="identifiant" id="identifiant" required
+                                        placeholder="Identifiant"><br>
+                                    <span id="missId"></span><br>
+
+                                    <label for="password">Mot de passe</label>
+                                    <input type="text" name="password" id="passwordAccount" required
+                                        placeholder="Mot de passe">
+                                    <span id="missPasswordAccount"></span><br>
+
+                                    <label for="confirmPassword">Confirmation mot de passe</label>
+                                    <input type="text" name="confirmPassword" id="confirmPasswordAccount" required
+                                        placeholder="Mot de passe">
+                                    <span id="missConfirmPasswordAccount"></span><br>
+
+                                    <button id="close" type="button" data-dismiss="modal">Quitter</button>
+                                    <input id="envoyer" type="submit" value="Envoyer">
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <!--End BS Modal-->
+
+                <div class="col-5 col-sm-6 col-lg-8" id="recherche">
+                    <form class="form-inline justify-content-end" action="/action_page.php">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <input class="form-control mr-sm-1" type="text" placeholder="Rechercher">
+                            </div>
+                            <div class="col-12 col-sm-4 ">
+                                <button class="btn bg-secondary" type="submit">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+                <div class="col-2 col-sm-1 offset-1 col-lg-1" id="lien_panier">
+                    <a href="404.html"><img src="logos/panier-trans.png" alt="panier" /></a>
+                </div>
+            </div>
+        </div>
+        <figure class="container" id="logoTitre">
+            <div class="row">
+                <div class="col-12" id="logoBS"><a href="index.html"><img src="logos/bieres-en-stock.jpg" /></a>
+                </div>
+                <div class="col-12" id=titreh1">
+                    <h1>La Bière dans tous ses états !</h1>
+                </div>
+            </div>
+        </figure>
+        <div id="nav">
+            <!-- A grey horizontal navbar that becomes vertical on small screens -->
+            <nav class="navbar navbar-expand-sm justify-content-center navbar-light">
+                <div class="row align-items-baseline">
+                    <div class="col-sm-2 col-lg-2 ">
+                        <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-9 col-lg-10">
+                        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <!--Début dropdown-->
+                                    <a class="nav-link dropdown-toggle" href="#" id="page"
+                                        data-toggle="dropdown">Accueil</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Origine de la bière</a>
+                                        <a class="dropdown-item" href="#">Bières spéciales</a>
+                                        <a class="dropdown-item" href="#">Le coin des collectionneurs</a>
+                                        <a class="dropdown-item" href="#">Pression ou bouteille ?</a>
+                                    </div>
+                                </li>
+                                <!--fin dropdown-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="presentation.html">Présentation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="boutique.html">Boutique</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Slider JS-->
+
+    <section id="slide" class="sliderJs">
+        <div id="slider1">
+            <img src="images1920/ambiance_pub.jpg" alt="Ambiance pub" id="slide2">
+            <div id="precedent" onclick="ChangeSlide(1)">
+                <</div> <div id="suivant" onclick="ChangeSlide(1)">>
+            </div>
+        </div>
+    </section>
+    <!-- End slider JS -->
+
+    <!-- Content -->
+    <section class="container-fluid content" id="main">
+        <div class="container" id="contenu1">
+            <div class="row">
+                <article class="col-12 col-sm-6 col-lg-3" id="histoire">
+                    <h2><span class="vert">Origine</span> de la bière</h2>
+                    <img src="images1920/biere_mur.jpg" alt="bière mur" />
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Quisque sapien<br />
+                        velit, aliquet eget commodo nec, auctor
+                        a sapien.<br /> Nam eu neque vulputate
+                        diam rhoncus faucibus.<br /> Curabitur
+                        quis varius libero. Lorem.</p>
+                    <a href="#">En savoir plus...</a>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3" id="amateurs">
+                    <h2>Bières<span class="vert"> spéciales</span> </h2>
+                    <img src="images1920/biere_fleur.jpg" alt="bière mur" />
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Quisque sapien<br />
+                        velit, aliquet eget commodo nec, auctor
+                        a sapien.<br /> Nam eu neque vulputate
+                        diam rhoncus faucibus.<br /> Curabitur
+                        quis varius libero. Lorem.</p>
+                    <a href="#">En savoir plus...</a>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3" id="collec">
+                    <h2>Le coin des<span class="vert">
+                            collectionneurs</span></h2>
+                    <img src="images1920/capsules.jpg" alt="bière mur" />
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Quisque sapien<br />
+                        velit, aliquet eget commodo nec, auctor
+                        a sapien.<br /> Nam eu neque vulputate
+                        diam rhoncus faucibus.<br /> Curabitur
+                        quis varius libero. Lorem.</p>
+                    <a href="#">En savoir plus...</a>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3" id="pression">
+                    <h2><span class="vert">Pression</span> ou <span class="vert">bouteille ?</span></h2>
+                    <img src="images1920/pression.jpg" alt="bière mur" />
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Quisque sapien<br />
+                        velit, aliquet eget commodo nec, auctor
+                        a sapien.<br /> Nam eu neque vulputate
+                        diam rhoncus faucibus.<br /> Curabitur
+                        quis varius libero. Lorem.</p>
+                    <a href="#">En savoir plus...</a>
+                </article>
+            </div>
+        </div>
+        <div class="container" id="contenu2">
+            <article class="row justify-content-center" id="tuto">
+                <h2 class="col-12">Comment<span class="vert"> fabriquer</span> sa bière ?</h2>
+                <iframe class="col-12 col-sm-10 col-lg-6" width="500" height="275"
+                    src="https://www.youtube.com/embed/TFrMSWYuZTw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+        </div>
+        <div class="container" id="contenu3">
+            <div class="row justify-content-center" id="venteNews">
+                <div class="col-3 col-sm-3 offset-1 col-lg-4">
+                    <a href="#"><img src="logos/points-vente.png" alt="pointsDeVente"></a>
+                </div>
+                <div class="col-4 col-sm-3 offset-1col-lg-4">
+                    <a href="#"><img src="logos/news.png" alt="news"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End content -->
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="col-12" id="reseauxMenu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row justify-content-center" id="liensReseaux">
+                            <div class="col-5 col-lg-4"><a href="#"><img src="logos/facebook.png" alt="facebook"></a>
+                            </div>
+                            <div class="col-5 col-lg-4"><a href="#"><img src="logos/twitter.jpg" alt="twitter" /></a>
+                            </div>
+                            <div class="col-1 col-lg-1"><a href="#"><img src="logos/Instagram.png"
+                                        alt="instagram" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="row justify-content-center" id="menupied">
+                            <li id="page" class="col-2 col-lg-2"><a href="index.html" class="">Accueil</a></li>
+                            <li class="col-3 col-lg-2"><a href="presentation.html">Présentation</a></li>
+                            <li class="col-2 col-lg-2"><a href="boutique.html">Boutique</a></li>
+                            <li class="col-2 col-lg-2"><a href="blog.html">Blog</a></li>
+                            <li class="col-2 col-lg-1"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="pied">
+                <div class="row">
+                    <p class="col-12">&copy; kercode 2019 - <a href="mentions-legales.html">Mentions légales - </a>
+                        <a href="rgpd.html">Politique de confidentialité - </a>
+                        <a href="planSite.html">Plan du site</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Cookie Bar -->
+    <div id='cookie-bar'>
+        <div id='util-cookie'>
+            <strong>- Ce site web utilise des cookies -</strong><br>
+            <a id='cookie-policy' href='rgpd.html'>Consulter notre politique des cookies !</a>
+            <!-- l'utilisateur accepte les cookies -->
+            <div class="ouiNon">
+                <div id="yes">
+                    <span id='agree'>J'accepte</span>
+                </div>
+                <div id="no">
+                    <!-- redirection de l'utilisateur en cas de refus -->
+                    <a href="https://google.com"><span id='doNotAgree'>Je refuse</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Public Health  -->
+
+    <div id="health-bar">
+        <div id="prevention">
+            <div id="ageLegal">
+                Vous certifiez avoir l'âge légal requis et la capacité<br>
+                juridique pour pouvoir acheter sur ce site internet.
+
+                <div class="ouiNon">
+                    <div id="yes">
+                        <span id="confirm">Oui</span>
+                    </div>
+                    <div id="no">
+                        <!-- redirection de l'utilisateur en cas de refus -->
+                        <a
+                            href="https://solidarites-sante.gouv.fr/archives/archives-presse/archives-communiques-de-presse/article/nouvel-affichage-obligatoire-relatif-a-l-interdiction-de-vente-d-alcool-aux">
+                            <span id="refuse">Non</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="sante">
+                L'abus d'alcool est dangereux pour la santé,
+                à consommer avec modération.
+                La vente d'alcool est interdite aux mineurs.
+                L'alcool ne doit pas être consommé par les femmes enceintes.
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="cookies.js"></script>
+    <script type="text/javascript" src="santePublique.js"></script>
+    <script type="text/javascript" src="active.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

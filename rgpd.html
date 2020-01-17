@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content=" Bière bière" />
+    <meta name="description" content="Bière en stock : vente de bières en bouteille, en fûts,
+     verres à bière, boutique, collectionneurs, et bien plus encore..." />
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <!--Appel à Fontawsome pour l'icône du menu-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Politique de confidentialité</title>
+</head>
+
+<!-- Contenu du site -->
+
+<body>
+    <!--Header-->
+    <header class="container-fluid header" id="top">
+        <div class="container" id="liensRecherche">
+            <div class="row">
+                <div class="col-2 col-sm-2 col-lg-3" id="lien_login">
+                    <div id="fondLogin">
+                        <a href="#modal1" class="js-modal">abc</a>
+                        <!-- Class "js-modal" à mettre sur tous les liens du site qui sont 
+                    censés ouvrir une boîte modale, puis faire un querySelector dans le js-->
+                    </div>
+                    <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria_labelledby="Login"
+                        style="display: none;">
+                        <!-- Display : none permet de cacher le contenu de la boite à l'utilisateur,
+                        Il sera annulé dans le js -->
+                        <div class="modal-wrapper js-modal-stop">
+                            <div id="zone_idmdp" class="formulaire">
+                                <form class="<!--row justify-content-center-->" id="login" method="POST"
+                                    action="traitement php">
+                                    <div id="blocPassword">
+                                        <h3>On s'est déjà vu ?</h3>
+                                        <p>Connectez-vous pour accéder à votre compte et<br>
+                                            profiter de tous ses avantages</p>
+                                        <fieldset>
+                                            <label for="identifiant">Identifiant</label>
+                                            <input type="text" name="identifiant" id="identifiant"
+                                                placeholder="Identifiant"><br>
+                                            <span id="missId"></span>
+                                            <label for="password">Mot de passe</label>
+                                            <input type="text" name="password" id="password" required
+                                                placeholder="Mot de passe"><br>
+                                            <span id="missPassword"></span>
+                                            <input class="grey" id="connexion" type="submit" value="Connexion"><br>
+                                            <a href="#" id="lost">Mot de passe oublié ?</a>
+                                        </fieldset>
+                                    </div>
+                                    <div id="createPassword">
+                                        <h3>Pas encore de compte ?</h3>
+                                        <input class="grey" type="button" value="Créer mon compte"><br>
+                                        <button class="js-modal-close">Quitter</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-2 col-sm-2 col-lg-3" id="lien_panier">
+                    <a href="404.html"><img src="logos/panier-trans.png" alt="panier" /></a>
+                </div>
+                <div class="col-8 col-sm-8 col-lg-6" id="recherche">
+                    <form class="form-inline justify-content-end" action="/action_page.php">
+                        <input class="form-control mr-sm-1" type="text" placeholder="Rechercher">
+                        <button class="btn bg-secondary" type="submit">Valider</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <figure class="container" id="logoTitre">
+            <div class="row">
+                <div class="col-12" id="logoBS"><a href="index.html"><img src="logos/bieres-en-stock.jpg" /></a></div>
+                <div class="col-12" id=titreh1">
+                    <h1>La Bière dans tous ses états !</h1>
+                </div>
+            </div>
+        </figure>
+        <div id="nav">
+            <!-- A grey horizontal navbar that becomes vertical on small screens -->
+            <nav class="navbar navbar-expand-sm justify-content-center navbar-light">
+                <div class="row align-items-center">
+                    <div class="col-sm-2 col-lg-2">
+                        <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-9 col-lg-10">
+                        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="presentation.html">Présentation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Boutique</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Banner -->
+    <section class="container-fluid banner">
+
+    </section>
+    <!-- End banner -->
+    <!-- Content -->
+    <div id="rgpd" class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+            <h1>Politique de confidentialité</h1>
+                <p>MA SOCIETE, SA au capital de XXXXX , inscrite au registre du commerce et des sociétés de Paris sous le numéro XXXXXXXX,<br/>
+                est le responsable du traitement des données collectées sur le Site de MA SOCIETE.</p>
+
+               <P>L’utilisateur est notamment informé que conformément à l’article 32 de la loi Informatique et libertés du 6 janvier 1978 modifiée,<br/>
+               les informations qu’il communique par les formulaires présents sur le Site de MA SOCIETE sont nécessaires pour répondre à sa demande<br/>
+               et sont destinées aux services en charge de répondre à sa demande à des fins de suivi de cette demande.</P>
+
+               <p>Conformément aux dispositions des articles 39 et 40 de la loi « Informatique et Libertés » du 6 janvier 1978 modifiée en 2004,<br/>
+               l’utilisateur bénéficie d’un droit d’accès, de rectification, de mise à jour et d’effacement des informations qui le concernent,<br/>
+               qu’il peut exercer en s’adressant àcil@masociete.com, ou par courrier à MA SOCIETE, 25 rue de mon adresse,<br/>
+               75002 Paris, en précisant dans l’objet du courrier « Droit des personnes » et en joignant la copie de son justificatif d’identité.</p>
+
+               <p>Vous bénéficiez également du droit de donner des directives sur le sort de vos données après votre décès.
+               Conformément aux dispositions de l’article 38 de la loi « Informatique et Libertés » du 6 janvier 1978 modifiée en 2004,<br/>
+               l’utilisateur peut également s’opposer, pour des motifs légitimes à ce que ses données fassent l’objet d’un traitement et sans motif et sans frais,<br/>
+               à ce que ses données soient utilisées à des fins de prospection commerciale.
+               L’utilisateur est informé que lors de ses visites sur le Site www.masociete.com, un cookie peut s’installer automatiquement sur son logiciel de navigation.
+               Les informations recueillies sur ce site seront conservées pendant une durée de trois ans.</p>
+
+               <p>Le cookie est un bloc de données qui ne permet pas d’identifier les utilisateurs mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site.<br/>
+               Le paramétrage du logiciel de navigation permet d’informer de la présence de cookie et éventuellement, de la refuser de la manière décrite à l’adresse suivante www.cnil.fr.<br/>
+               L’utilisateur dispose d’un droit d’accès, de retrait et de modification des données à caractère personnel communiquées par le biais des cookies dans les conditions indiquées ci-dessus.<br/>
+               L’utilisateur du Site de MA SOCIETE est tenu de respecter les dispositions de la loi Informatique et libertés du 6 janvier 1978 modifiée dont la violation est passible de sanctions pénales.<br/>
+               Il doit notamment s’abstenir, s’agissant des informations nominatives auxquelles il accède, de toute collecte, de toute utilisation détournée, et d’une manière générale,<br/>
+               de tout acte susceptible de porter atteinte à la vie privée ou à la réputation des personnes.</p>
+
+               MA SOCIETE en visitant nos sites Web ou en utilisant nos services, tels que PRODUIT .<br/>
+               MA SOCIETE est une société établie en France et, en tant que telle, nous adhérons à la législation française sur la protection des informations personnelles (1998: 204)<br/>
+               qui applique la Directive sur la protection des données européennes 95/46/EC.<br/>
+               Notre siège social est situé au adresse, ville, code postal . N’hésitez pas à nous faire part de vos questions ou préoccupations en matière de protection des données,<br/>
+               à l’adresse suivante : dataprotection@masociate.com.<br/>
+               Dans cette charte de confidentialité, nous expliquons quels types de données personnelles sont susceptible d’être traité et dans quelle finalité. Nous expliquons également<br/>
+               les choix que vous avez par rapport à notre traitement et la façon dont vous pouvez en apprendre davantage sur notre traitement et sur vos droits.</p>
+
+               <p>PORTÉE DE LA CHARTE DE CONFIDENTIALITÉ<br/>
+
+               Veuillez noter que cette charte de confidentialité concerne le traitement des données personnelles dont MA SOCIETE est le Responsable de Traitement,<br/>
+               c’est-à-dire dans les cas où MA SOCIETE a décidé des finalités et des moyens de traitement.<br/>
+               Pour éviter toute ambiguïté, cette Charte de confidentialité ne concerne aucun traitement de données personnelles que MA SOCIETE peut effectuer en tant<br/>
+               que Sous-Traitant découlant de votre utilisation de nos services.<br/>
+               Pour obtenir plus d’informations sur la façon dont nos services, peuvent être utilisés pour faciliter vos traitements de données personnelles,<br/>
+               et sur les responsabilités et les engagements de MA SOCIETE en relation avec ceux-ci, veuillez vous référer aux conditions applicables.</p>
+
+               <p>DONNÉES PERSONNELLES TRAITÉES<br/>
+               Les données personnelles désignent les données qui vous identifient en tant que personne physique. Nous pouvons être amené à traiter les types de données personnelles suivants vous concernant :<br/>
+               Vos coordonnées incluant votre nom, l’adresse courriel et le numéro de téléphone<br>
+               Informations utilisateur, par exemple, si vous vous connectez à notre service ou visitez nos sites internet. Ces informations peuvent comprendre le numéro IP,<br/>
+               le type de périphérique et le navigateur, fuseau horaire, situation géographique, ainsi que vos intérêt et préférences des informations sur la façon dont vous interagissez avec nos services,<br/>
+               par exemple sur les fonctionnalités utilisées et les boutons cliqués<br/>
+               Autres informations que nous recevons à travers vos contacts<br/>
+
+               <p>FINALITES DE TRAITEMENT<br/>
+
+               Nous traitons vos données personnelles pour les finalités suivantes :<br/>
+               Fournir nos services conformément aux conditions applicables<br/>
+               Administrer la relation d’affaires avec vous et le client de MA SOCIETE que vous représentez<br/>
+
+               Développer et améliorer nos services<br/>
+               Afin de fournir des informations et des offres aux clients de MA SOCIETE actuels ou potentiels sur nos services par des parties tiers sélectionnés. Pour éviter toute ambiguïté,<br/>
+               tout matériel de marketing distribué à l’aide de vos données personnelles vous est envoyé en tant que représentant de client actuel ou potentiel de MA SOCIETE et non à vous en tant que personne privée.</p>
+
+               <p>PARTAGE AVEC DES TIERS ET TRANSFERT VERS LES PAYS TIERS<br/>
+
+               Nous pouvons partager des données personnelles avec des tiers aux fins expliquées ci-dessus. Pour éviter tout doute, nous ne partagerons pas de données personnelles avec des tiers de manière<br/>
+               à ce que ces tiers utilisent des données personnelles à des fins de marketing direct en relation avec vous en tant que particulier, mais uniquement avec vous en tant que représentant de client actuel ou potentiel de MA SOCIETE .</p>
+
+               <p>Nous pouvons transférer des données personnelles dans un pays en dehors de l’EEE, mais nous devrons alors tout d’abord obtenir votre consentement ou veiller à ce que le transfert soit légal et sécuritaire en prenant d’autres dispositions.</p>
+
+               <p>Comme expliqué ci-dessus, n’oubliez pas que cette charte de confidentialité ne concerne aucun traitement de données pour lequel vous pourriez être responsable à la suite de l’utilisation de nos services. Vous, ou la partie que vous représentez,<br/>
+                êtes toujours responsables de votre traitement des données personnelles conformément à la loi en vigueur.</p>
+
+               <p>VOS DROITS<br/>
+
+               Il est de notre obligation de traiter des éléments personnels précis, pertinents et nécessaires tout en tenant compte de nos finalités légitimes. Il est de votre droit de nous contrôler.<br/>
+               Pour mettre à jour les données personnelles que nous traitons vous concernant, veuillez nous contacter sur dataprotection@masociete.com.<br/>
+               Pour recevoir gratuitement un extrait de données personnelles que nous traitons vous concernant, envoyez-nous une lettre signée à l'adresse de MA SOCIETE.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End content -->
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="col-12" id="reseauxMenu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row justify-content-center" id="liensReseaux">
+                            <div class="col-5 col-lg-4"><a href="#"><img src="logos/facebook.png" alt="facebook"></a>
+                            </div>
+                            <div class="col-5 col-lg-4"><a href="#"><img src="logos/twitter.jpg" alt="twitter" /></a>
+                            </div>
+                            <div class="col-1 col-lg-1"><a href="#"><img src="logos/Instagram.png"
+                                        alt="instagram" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="row justify-content-center" id="menupied">
+                            <li class="col-2 col-lg-2"><a href="index.html" class="">Accueil</a></li>
+                            <li class="col-3 col-lg-2"><a href="presentation.html">Présentation</a></li>
+                            <li class="col-2 col-lg-2"><a href="boutique.html">Boutique</a></li>
+                            <li class="col-2 col-lg-2"><a href="blog.html">Blog</a></li>
+                            <li class="col-2 col-lg-1"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="pied">
+                <div class="row">
+                    <p class="col-12">&copy; kercode 2019 - <a href="mentions-legales.html">Mentions légales - </a>
+                        <a href="rgpd.html" class="choix">Politique de confidentialité - </a>
+                        <a href="planSite.html">Plan du site</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="active.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
