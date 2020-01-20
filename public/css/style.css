@@ -239,11 +239,11 @@ li {
 }
 #precedent {
     left: 0;
-    margin-left: 20px;
+    margin-left: 280px;
 }
 #suivant {
     right: 0;
-    margin-right: 20px;
+    margin-right: 280px;
 }
 #slider1:hover #precedent,
 #slider1:hover #suivant {

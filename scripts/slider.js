@@ -1,5 +1,16 @@
 var slide = ["public/images/ambiance_pub.jpg", "public/images/pinte_fonds_noir.jpg", "public/images/cheers.jpg", "public/images/tireuse.jpg"];
 var i = 0; 
+setInterval(function(){
+    document.getElementById("slide2").src = slide[i];
+    i++;
+    if (i == 4) i = 0;
+}, 3000);
+
+
+
+
+
+
 function ChangeSlide(sens) {     
     i = i + sens;
     if (i < 0)         
