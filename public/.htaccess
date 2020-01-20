@@ -1,0 +1,15 @@
+  # redirection du site sans www vers www
+ # RewriteEngine On
+  #RewriteCond %{HTTP_HOST} ^monsite.com [NC]
+  #RewriteRule ^(.*$) http://wwww.bieres-en-stock.com/$1 [L,R=301]
+
+#redirection vers HTTPS
+#RewriteCond %{SERVER_PORT}
+#^80$ RewriteRule ^(.*$) https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+#redirection 404
+#ErrorDocument 404 /page-404.html
+
+
+
+

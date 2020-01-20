@@ -588,6 +588,9 @@ iframe {
 #erreur p{
     text-align: center;
 }
+#erreur p a{
+    text-decoration: underline;
+}
 /*-----------------Mentions légales------------------*/
 #mentionslegales{
     font-family: Georgia, 'Times New Roman', Times, serif;
