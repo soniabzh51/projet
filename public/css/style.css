@@ -439,9 +439,9 @@ l'écran - (moins) 20px pour la marge sur les côtés. Id pour la hauteur (vh)*/
 #modal2{
     position: fixed;
     left: 31%;
-    top: 10%;
+    top: 6%;
     overflow: auto;
-    height: 420px ; 
+    height: 700px ; 
     width: 620px; 
     max-width: calc(100vw - 20px);
     max-width: calc(100vh - 20px);
@@ -474,6 +474,9 @@ l'écran - (moins) 20px pour la marge sur les côtés. Id pour la hauteur (vh)*/
 }
 .modal-body #prenom{
     margin-left: 28px;
+}
+.modal-body #adressLabel{
+    margin-left: -200px;
 }
 .modal-body #identifiant{
     margin-left: 10px;
@@ -551,7 +554,7 @@ legend {
 #nom {
     margin-left: 21px;
 }
-#email {
+#mail {
     margin-left: 10px;
 }
 #objet {

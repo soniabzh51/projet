@@ -93,13 +93,21 @@
                                     <form id="createPassword" method="POST" action="traitement php">
 
                                         <label for="nom">Nom</label>
-                                        <input type="text" id="nom" required placeholder="Nom">
+                                        <input type="text" id="nom" required placeholder="Nom"><br>
                                         <span id="missNom"></span><br>
 
                                         <label for="prenom">Prénom</label>
-                                        <input type="text" id="prenom" required placeholder="Prénom">
+                                        <input type="text" id="prenom" required placeholder="Prénom"><br>
                                         <span id="missPrenom"></span><br>
 
+                                        <label for="adresse" id="adressLabel">Adresse</label><br>
+                                        <!-- <p> -->
+                                            <textarea name="adresse" id="lieu" placeholder="Votre adresse" rows="5" cols="30"
+                                                onkeyup="reload()"></textarea>
+                                                <ul id="listAdress"></ul>
+                                            <p id="wrapper"></p>
+                                        <!-- </p> -->
+        
                                         <label for="identifiant">Identifiant</label>
                                         <input type="text" name="identifiant" id="identifiant" required
                                             placeholder="Identifiant"><br>
@@ -107,12 +115,12 @@
 
                                         <label for="password">Mot de passe</label>
                                         <input type="text" name="password" id="passwordAccount" required
-                                            placeholder="Mot de passe">
+                                            placeholder="Mot de passe"><br>
                                         <span id="missPasswordAccount"></span><br>
 
                                         <label for="confirmPassword">Confirmation mot de passe</label>
                                         <input type="text" name="confirmPassword" id="confirmPasswordAccount" required
-                                            placeholder="Mot de passe">
+                                            placeholder="Mot de passe"><br>
                                         <span id="missConfirmPasswordAccount"></span><br>
 
                                         <button id="close" type="button" data-dismiss="modal">Quitter</button>
@@ -383,7 +391,7 @@
     <script type="text/javascript" src="scripts/slider.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
