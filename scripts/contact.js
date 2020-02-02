@@ -49,7 +49,7 @@ eMailValid.addEventListener("click", verifyMail);
 
 function verifyMail(event) {
         //Si le champ est vide et validé
-        if (mail.validity.valueMissing) {
+        // if (mail.validity.valueMissing) {
                 event.preventDefault();
                 missMail.textContent = 'Mail manquant';
         } 
@@ -62,7 +62,7 @@ function verifyMail(event) {
 }
 // -------------------- API SLACK------------------------
 function test() {
-
+        console.log("plop")
         let apiUrl = "https://slack.com/api/chat.postMessage";
         let channel =  "bot";
         let text = document.getElementById("message").value;

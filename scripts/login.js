@@ -122,6 +122,11 @@ function reload() {
                 li.innerText = element.properties.label;
                 document.getElementById("wrapper").appendChild(li)
                 console.log(myJson);
+                li.addEventListener("click", function(){
+                    let add = document.getElementById("lieu");
+                    add.value = li.textContent;
+                    li.innerHTML = "";
+                })
             });
         });
 };
