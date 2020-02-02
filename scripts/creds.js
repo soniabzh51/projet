@@ -1,3 +1,3 @@
 let creds = {
-    token : "xoxb-926722159079-924428430804-qdK4oqgtV4zq2GMXFrUcqBYx"
+    token : "xoxb-926722159079-924428430804-NjHmB4xbI0QMJdSaAD8O53lW"
 }

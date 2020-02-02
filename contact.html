@@ -152,8 +152,8 @@
                                         <input type="text" id="prenom" required placeholder="Votre prénom">
                                         <span id="missPrenom"></span>
                                         <p>
-                                            <label for="email">e-mail</label>
-                                            <input type="email" name="email" id="email" required
+                                            <label for="email">Email</label>
+                                            <input type="text" name="email" id="mail" required
                                                 placeholder="Votre adresse mail">
                                             <span id="missMail"></span>
                                         </p>
@@ -180,14 +180,14 @@
                             </p>
                             <p>
                                 <label for="message"></label>
-                                <textarea name="message" id="message" placeholder="Votre message" rows="10"
+                                <textarea name="message" id="message" rows="10"
                                     cols="100"></textarea>
                             </p>
                         </fieldset>
                         <div class="col-12" id="champ3">
                             <div class="row justify-content-center">
-                                <input class="col-3 col-sm-2 col-lg-2" id="valider" type="submit" value="Envoyer">
-                                <input class="col-3 col-sm-2 col-lg-2" id="reset" type="reset" value="Annuler">
+                                <button class="col-3 col-sm-2 col-lg-2" id="send">Contacter</button>
+                                <button class="col-3 col-sm-2 col-lg-2" id="reset">Annuler</button>
                             </div>
                         </div>
                     </div>
@@ -249,21 +249,24 @@
 
 
     <!-- Optional JavaScript-->
+    <script type="text/javascript" src="scripts/contact.js"></script>
+    <script type="text/javascript" src="scripts/creds.js"></script>
     <script type="text/javascript" src="scripts/login.js"></script> 
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/active.js"></script>
-    <script type="text/javascript" src="scripts/contact.js"></script>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    
+    </script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 
 </html>

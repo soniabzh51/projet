@@ -27,7 +27,10 @@
                         let missNom = document.getElementById("missNom");
                         let nomValid = /^([a-zA-Zéèîï]|[a-zéèêàçîî]+[-'\s][a-zA-Zéèîï]|[a-zéèêàçîï]+?){3,25}$/;
 
-                        lastNameValid.addEventListener("click", verifyLastName);
+                        if (document.getElementById("envoyer")) {
+                            let lastNameValid = document.getElementById("envoyer");
+                            lastNameValid.addEventListener("click", verifyLastName);                                
+                        }
 
                         function verifyLastName(event) {
                             //Si le champ est vide et validé
@@ -103,3 +106,23 @@
                                 else{
                                 }
                         }
+ // ------------------- API GEO GOUV-----------------------
+
+function reload() {
+    document.getElementById("wrapper").innerHTML = "";
+    let message = document.getElementById("lieu").value;
+    let listAdress = document.getElementById("listAdress").value;
+    fetch("https://api-adresse.data.gouv.fr/search/?q=" + message).then((response) => {
+            return response.json();
+        })
+        .then((myJson) => {
+
+            myJson.features.forEach(element => {
+                let li = document.createElement("li");
+                li.innerText = element.properties.label;
+                document.getElementById("wrapper").appendChild(li)
+                console.log(myJson);
+            });
+        });
+};
+
