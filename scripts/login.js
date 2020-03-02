@@ -111,7 +111,6 @@
 function reload() {
     document.getElementById("wrapper").innerHTML = "";
     let message = document.getElementById("lieu").value;
-    let listAdress = document.getElementById("listAdress").value;
     fetch("https://api-adresse.data.gouv.fr/search/?q=" + message).then((response) => {
             return response.json();
         })

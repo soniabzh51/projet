@@ -381,7 +381,7 @@ l'écran - (moins) 20px pour la marge sur les côtés. Id pour la hauteur (vh)*/
 
 .modal-wrapper {
     overflow: auto;
-    height: 380px ; 
+    height: 400px ; 
     width: 600px; 
     max-width: calc(100vw - 20px);
     max-width: calc(100vh - 20px);
@@ -437,14 +437,11 @@ l'écran - (moins) 20px pour la marge sur les côtés. Id pour la hauteur (vh)*/
 
 /*-------Boîte modale BS -------*/
 #modal2{
-    position: fixed;
-    left: 31%;
-    top: 6%;
     overflow: auto;
     height: 700px ; 
-    width: 620px; 
+    width: 800px; 
     max-width: calc(100vw - 20px);
-    max-width: calc(100vh - 20px);
+    /* max-width: calc(100vh - 20px); */
     padding: 20px;
     background-color: rgb(151, 151, 151);
     font-family: Georgia, 'Times New Roman', Times, serif;
